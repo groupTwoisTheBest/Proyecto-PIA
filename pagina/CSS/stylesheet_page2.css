@@ -1,0 +1,28 @@
+.calification_opcion{
+    border: #333 solid 3px;
+    width: 85vw;
+    height: 60vh;
+    text-align: center;
+    margin: 10vw auto;
+    border-radius:30px;
+
+}
+body{
+    margin: 0;
+    text-align: center;
+}
+.title{
+    font-size: 2rem;
+}
+
+select {
+    border-radius: 10px;
+    border: 1px solid #111;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    width: 10vw;
+    max-width: 300px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    margin: 0;
+}
