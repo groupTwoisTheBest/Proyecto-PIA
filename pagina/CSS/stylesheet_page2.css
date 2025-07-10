@@ -5,6 +5,7 @@
     text-align: center;
     margin: 10vw auto;
     border-radius:30px;
+        font-family: Arial, sans-serif;
 
 }
 body{
@@ -13,16 +14,28 @@ body{
 }
 .title{
     font-size: 2rem;
+    margin: 6.5rem 0 0rem;
 }
 
-select {
+select,.to-go-calification_plataform {
     border-radius: 10px;
     border: 1px solid #111;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1%;      
     padding: 0.5rem;
-    width: 10vw;
+    width: 100%;
     max-width: 300px;
     box-sizing: border-box;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 0;
+    margin-top: 1.5rem ;
+    color: #55f;
+}
+.to-go-calification_plataform{
+    width: 14.5%;
+    font-size: 16px;
+}
+option{
+
+    color: #111;
+    font-size: 1rem;
 }
