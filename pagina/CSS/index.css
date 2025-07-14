@@ -2,7 +2,6 @@
     margin: 2rem auto;
     margin-top:0 ;
     margin-bottom: 0;
-    background-color: #ffffff;
     text-align: center;
     width: 90%;
     max-width: 960px;
@@ -13,7 +12,7 @@
 }
 
 body {
-    background-color: #ffffff;
+    background:url(../Imgs/background-login.jpg);
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -38,6 +37,8 @@ fieldset {
     margin-top: 0;
     padding: 1rem;
     box-sizing: border-box;
+    background: #ffffff5e;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #11111169;
 }
 
 .Javi {

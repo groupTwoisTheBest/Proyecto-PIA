@@ -6,11 +6,15 @@
     margin: 10vw auto;
     border-radius:30px;
         font-family: Arial, sans-serif;
+            background: #ffffff5e;
+    box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #11111169;
 
 }
 body{
     margin: 0;
     text-align: center;
+        background:#f2f3f4;
+            background:linear-gradient(to right,#f2f3f4,#111,400px);
 }
 .title{
     font-size: 2rem;
@@ -28,11 +32,14 @@ select,.to-go-calification_plataform {
     font-size: 1.4rem;
     margin: 0;
     margin-top: 1.5rem ;
-    color: #55f;
+            background: #ffffffa9;
+
 }
 .to-go-calification_plataform{
     width: 14.5%;
     font-size: 16px;
+    background-color: #080;
+    color: #fff;
 }
 option{
 
