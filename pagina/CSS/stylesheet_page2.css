@@ -1,24 +1,23 @@
 .calification_opcion{
     border: #333 solid 3px;
-    width: 85vw;
+    width: 30vw;
     height: 60vh;
     text-align: center;
     margin: 10vw auto;
     border-radius:30px;
         font-family: Arial, sans-serif;
-            background: #ffffff5e;
+            background: transparent;
     box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #11111169;
+    min-width: 20vmin;
 
 }
 body{
     margin: 0;
     text-align: center;
-        background:#f2f3f4;
-            background:linear-gradient(to right,#f2f3f4,#111,400px);
 }
 .title{
-    font-size: 2rem;
-    margin: 6.5rem 0 0rem;
+    font-size: 2em;
+    margin: 1em auto;
 }
 
 select,.to-go-calification_plataform {
@@ -31,18 +30,29 @@ select,.to-go-calification_plataform {
     box-sizing: border-box;
     font-size: 1.4rem;
     margin: 0;
-    margin-top: 1.5rem ;
-            background: #ffffffa9;
+background: transparent;
 
 }
 .to-go-calification_plataform{
-    width: 14.5%;
-    font-size: 16px;
-    background-color: #080;
+    width: 25vw;
+    height: 6vh;
+    font-size: 1.3em;
+    background:  linear-gradient(to top, #203256,#553343);
     color: #fff;
+    margin: 2.5em auto;
+    box-sizing: border-box;
 }
 option{
-
+    background: #3B334D;
     color: #111;
-    font-size: 1rem;
+    font-size: 1em;
+}
+html{
+    background:  linear-gradient(to left top, #553343, #203256);
+    height: 100%;
+    width: 100%;
+}
+
+label{
+    font-size: 1.4em;
 }

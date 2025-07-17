@@ -12,9 +12,11 @@
 }
 
 body {
-    background:url(../Imgs/background-login.jpg);
+
+
     margin: 0;
     font-family: Arial, sans-serif;
+    
 }
 
 input {
@@ -25,6 +27,7 @@ input {
     width: 100%;
     max-width: 300px;
     box-sizing: border-box;
+
 }
 
 fieldset {
@@ -37,7 +40,7 @@ fieldset {
     margin-top: 0;
     padding: 1rem;
     box-sizing: border-box;
-    background: #ffffff5e;
+    background: #ffffff26;
     box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #11111169;
 }
 
@@ -57,12 +60,13 @@ fieldset {
     margin-bottom: 1.5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0.3rem 1rem;
-background: #ffffff26;
+        background: #ffffff26;
         color: #bbb;
 }
 
 ::placeholder {
     font-size: 1rem;
+    color:#554f5a ;
 }
 
 .submit1 {
