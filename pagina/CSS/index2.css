@@ -1,24 +1,42 @@
 
-
-::placeholder {
-    font-size: 1rem;
+/* Fondo general */
+html {
+    background: linear-gradient(to left top, #553343, #203256);
+    height: 100%;
+    width: 100%;
 }
 
+/* Placeholder coherente */
+::placeholder {
+    font-size: 1rem;
+    color: #A26BA0; /* lavanda suave, combina con el vino del fondo */
+}
+
+/* Botón principal */
 .submit1 {
     padding: 0.9rem 1.5rem;
     margin-top: 1rem;
     font-size: 1rem;
     border: none;
-    background-color: #080       ;
-    color: #fff;
+    background: linear-gradient(to top, #4FA3D9, #3B6FA2); /* azul brillante */
+    color: #F2F2F2;
     border-radius: 10px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
-html{
-    background:  linear-gradient(to left top, #553343, #203256);
+.submit1:hover {
+    background: linear-gradient(to top, #6FC1F1, #5588C2); /* hover más claro */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden; /* evita scroll horizontal */
+    background: linear-gradient(to left top, #553343, #203256);
+    box-sizing: border-box;
 }
 
 /* Responsive adjustments */
