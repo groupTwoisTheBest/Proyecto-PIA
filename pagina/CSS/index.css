@@ -86,6 +86,7 @@ fieldset {
     background: linear-gradient(to top, #4FA3D9, #3B6FA2);
     color: #F2F2F2;
     border-radius: 10px;
+    
     cursor: pointer;
     transition: background 0.3s ease;
 }
