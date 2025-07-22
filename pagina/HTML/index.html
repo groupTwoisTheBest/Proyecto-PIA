@@ -18,18 +18,45 @@
     <fieldset>
         <div>
             <h3 class="Document-title">Documento</H3>
-            <input class="Num1" type="text" placeholder="EJ:1243" >
+            <input class="Num1" type="text" placeholder="EJ:1243" name="username" >
         </div>  
         <div>
             <h3>contraseña</h3>
-            <input type="password" class="password" placeholder="EJ:Mjaviera">
+            <input type="password" class="password" placeholder="EJ:Mjaviera" name="password">
         </div>
         <div>
-            <a href="page2.html"><input type="submit" class="submit1"></a>
+            <button type="submit" class="submit1">Ingresar</button>
         </div>
         </div>
     </fieldset>
 </div>  
+<script>
+document.querySelector('.submit1').addEventListener('click', function (e) {
+    e.preventDefault();
+    const username = document.querySelector('.Num1').value;
+    const password = document.querySelector('.password').value;
+
+    const formData = new URLSearchParams();
+    formData.append("username", username);
+    formData.append("password", password);
+
+    fetch("http://localhost:8080/login", {
+        method: "POST",
+        body: formData,
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+    })
+    .then(res => res.text())
+    .then(data => {
+        if (data === "SUCCESS") {
+            window.location.href = "page2.html";
+        } else {
+            alert("Usuario o contraseña incorrectos.");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
