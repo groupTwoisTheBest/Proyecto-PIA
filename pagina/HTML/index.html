@@ -16,46 +16,27 @@
     <img src="../Imgs/javiera-icon.png" alt="simbolo de la javiera" class="Javi">
     
     <fieldset>
-        <div>
-            <h3 class="Document-title">Documento</H3>
-            <input class="Num1" type="text" placeholder="EJ:1243" name="username" >
-        </div>  
-        <div>
-            <h3>contraseña</h3>
-            <input type="password" class="password" placeholder="EJ:Mjaviera" name="password">
-        </div>
-        <div>
-            <button type="submit" class="submit1">Ingresar</button>
-        </div>
-        </div>
+    <h2>Evaluate</h2>
+
+    <input id="username" type="text" placeholder="Documento">
+
+    <input id="password" type="password" placeholder="Contraseña">
+    <button onclick="login()">Ingresar</button>
     </fieldset>
 </div>  
+
 <script>
-document.querySelector('.submit1').addEventListener('click', function (e) {
-    e.preventDefault();
-    const username = document.querySelector('.Num1').value;
-    const password = document.querySelector('.password').value;
+    function login() {
+        const user = document.getElementById("username").value;
+        const pass = document.getElementById("password").value;
 
-    const formData = new URLSearchParams();
-    formData.append("username", username);
-    formData.append("password", password);
+        if (user === "10" && pass === "mj")
+        {window.location.href = "page2.html";}
 
-    fetch("http://localhost:8080/login", {
-        method: "POST",
-        body: formData,
-        headers: {
-            "Content-Type": "application/x-www-form-urlencoded"
+        else {
+        alert("Usuario o contraseña incorrectos.");
         }
-    })
-    .then(res => res.text())
-    .then(data => {
-        if (data === "SUCCESS") {
-            window.location.href = "page2.html";
-        } else {
-            alert("Usuario o contraseña incorrectos.");
-        }
-    });
-});
+    }
 </script>
 
 </body>
