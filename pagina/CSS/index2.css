@@ -34,8 +34,6 @@ html, body {
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* evita scroll horizontal */
-    background: linear-gradient(to left top, #553343, #203256);
     box-sizing: border-box;
 }
 
