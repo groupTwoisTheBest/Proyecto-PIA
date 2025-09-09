@@ -26,13 +26,20 @@
 </div>  
 
 <script>
+const users = [
+        { username: "1025657843", password: "MJAVIERA", redirect: "selectProfesor.html" },
+        { username: "1025657456", password: "MJAVIERA", redirect: "selectProfesor.html" },
+        { username: "102011554", password: "MJAVIERA", redirect: "selectProfesor.html" }
+]
     function login() {
         const user = document.getElementById("username").value;
         const pass = document.getElementById("password").value;
 
-        if (user === "10" && pass === "mj")
-        {window.location.href = "page2.html";}
+        const found = users.find(u => u.username === user && u.password === pass);
 
+    if (found) {
+            window.location.href = found.redirect;
+        } 
         else {
         alert("Usuario o contraseña incorrectos.");
         }
