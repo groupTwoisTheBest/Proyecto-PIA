@@ -76,7 +76,6 @@ button:active {
     max-width: 100%;
     max-height: 3em;
     box-sizing: border-box;
-    overflow: hidden;
     background: rgba(255, 255, 255, 0.05);
     color: #CCCCCC;
     border-radius: 8px;
@@ -111,7 +110,7 @@ button:active {
         width: 95%;
         padding: 1rem;
         max-height: 85vh;
-        overflow-y: auto;
+
     }
 
     .Javi {
