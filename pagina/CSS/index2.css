@@ -1,7 +1,7 @@
 
 /* Fondo general */
 html {
-    background: linear-gradient(to left top, #553343, #203256);
+    background: #222;
     height: 100%;
     width: 100%;
 }
@@ -39,15 +39,6 @@ html, body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .Open {
-        width: 95%;
-        padding: 1rem;
-    }
-
-    .Javi {
-        height: auto;
-        max-height: 150px;
-    }
 
     fieldset {
         width: 100%;
