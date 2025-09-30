@@ -18,7 +18,7 @@ body {
     min-height: 300px;
     padding: 2em;
     text-align: center;
-    margin: 20vh auto;
+    margin: auto auto;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(6px);
@@ -44,6 +44,7 @@ select,
     width: 100%;
     max-width: 300px;
     box-sizing: border-box;
+    text-align: center;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.05); 
     color: #F2F2F2;
@@ -63,6 +64,7 @@ select option {
     margin: 2em auto;
     cursor: pointer;
     transition: background 0.3s ease;
+    text-align: center;
 }
 
 
