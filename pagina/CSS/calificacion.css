@@ -18,7 +18,7 @@ body {
     min-height: 300px;
     padding: 2em;
     text-align: center;
-    margin: auto auto;
+    margin: 5vh auto;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.2); 
     backdrop-filter: blur(6px);
