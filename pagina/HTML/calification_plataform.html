@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="calification_opcion">
-        <h2 class="title">Erica</h2>
+        <h2 id="Selectormestro"></h2>
         <h2 class="track">Explicación del tema</h2>
         
             <select>
                 <option>Nota</option>
-                <option>Bajo</option>
+                <option>Malo</option>
                 <option>Regular</option>    
                 <option>Bien</option>
                 <option>Exelente</option>
@@ -28,7 +28,7 @@
         
             <select>
                 <option>Nota</option>
-                <option>Bajo</option>
+                <option>Malo</option>
                 <option>Regular</option>    
                 <option>Bien</option>
                 <option>Exelente</option>
@@ -37,12 +37,12 @@
         
 
         <h2 class="track">
-        Trabajo en clase
+        Actividades de clase
         </h2>
         
             <select>
                 <option>Nota</option>
-                <option>Bajo</option>
+                <option>Malo</option>
                 <option>Regular</option>    
                 <option>Bien</option>
                 <option>Exelente</option>
@@ -54,6 +54,9 @@
 
         </div>
         
-    
+    <script>
+        const maestroSeleccionado = localStorage.getItem('maestroSeleccionado');
+        document.getElementById('Selectormestro').textContent = `Evaluando a: ${maestroSeleccionado}`;
+    </script>
 </body>
 </html>
