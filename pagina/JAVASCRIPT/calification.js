@@ -1,30 +1,23 @@
+// Escucha el evento "submit" del formulario con id "Selectormaestro"
 document.getElementById('Selectormaestro').addEventListener('submit', function(event) {
+
+    // Evita que el formulario recargue la página automáticamente
     event.preventDefault();
 
+    // Obtiene el valor seleccionado del elemento con id "Selectormaestro"
     const maestro = document.getElementById('Selectormaestro').value;
+
+    // Verifica si el usuario seleccionó un maestro
     if (maestro) {
+
+        // Guarda el maestro seleccionado en el almacenamiento local del navegador
         localStorage.setItem('maestroSeleccionado', maestro);
+
+        // Redirige a la siguiente página del flujo
         window.location.href = 'pagina2.html';
     } else {
+
+        // Si no seleccionó nada, muestra un mensaje de alerta
         alert('Por favor, selecciona un maestro');
     }
 });
-
-function guardarYContinuar() {
-    const Selectormaestro = [];
-    if (document.getElementById('option1').checked) {
-        Selectormaestro.push(document.getElementById('Liliana').value);
-    }
-    if (document.getElementById('option2').checked) {
-        Selectormaestro.push(document.getElementById('Erica').value);
-    }
-    if (document.getElementById('option3').checked) {
-        Selectormaestro.push(document.getElementById('Fredy').value);
-    }
-
-    // Guarda las opciones en localStorage
-    localStorage.setItem('respuestasCuestionario', JSON.stringify(Selectormaestro));
-
-    // Redirige a la siguiente página
-    window.location.href = 'resultados.html';
-}

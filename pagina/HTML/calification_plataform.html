@@ -13,11 +13,11 @@
         <h2 class="track">Explicación del tema</h2>
         
             <select>
-                <option>Nota</option>
-                <option>Malo</option>
-                <option>Regular</option>    
-                <option>Bien</option>
-                <option>Exelente</option>
+                <option value="">Nota</option>
+                <option value="Malo">Malo</option>
+                <option value="Regular">Regular</option>    
+                <option value="Bien" >Bien</option>
+                <option value="Excelente">Excelente</option>
             </select>
             
         
@@ -27,11 +27,11 @@
         
         
             <select>
-                <option>Nota</option>
-                <option>Malo</option>
-                <option>Regular</option>    
-                <option>Bien</option>
-                <option>Exelente</option>
+                <option value="">Nota</option>
+                <option value="Malo">Malo</option>
+                <option value="Regular">Regular</option>    
+                <option value="Bien">Bien</option>
+                <option value="Excelente">Excelente</option>
             </select>
             
         
@@ -41,11 +41,11 @@
         </h2>
         
             <select>
-                <option>Nota</option>
-                <option>Malo</option>
-                <option>Regular</option>    
-                <option>Bien</option>
-                <option>Exelente</option>
+                <option value="">Nota</option>
+                <option value="Malo">Malo</option>
+                <option value="Regular">Regular</option>    
+                <option value="Bien">Bien</option>
+                <option value="Excelente">Excelente</option>
             </select>
             
         <a href="certificado.html">
@@ -55,8 +55,36 @@
         </div>
         
     <script>
+    // Obtiene desde localStorage el nombre del maestro que fue seleccionado previamente
         const maestroSeleccionado = localStorage.getItem('maestroSeleccionado');
+
+    // Muestra en pantalla el texto "Evaluando a: [maestro]"
+    // Insertándolo dentro del elemento con id "Selectormestro"
         document.getElementById('Selectormestro').textContent = `Evaluando a: ${maestroSeleccionado}`;
-    </script>
+
+        // Escucha el evento "submit" del formulario con id "calification"
+        document.getElementById('calification').addEventListener('submit', function(event) {
+
+        // Evita que el formulario recargue la página automáticamente
+        event.preventDefault();
+
+        // Obtiene la calificación seleccionada por el usuario
+        const maestro = document.getElementById('maestro').value;
+
+        // Si el usuario seleccionó una calificación...
+        if (maestro) {
+
+            // Guarda la calificación en localStorage
+            localStorage.setItem('calification', maestro);
+
+            // Redirige nuevamente a la plataforma de calificación
+            window.location.href = 'calification_plataform.html';
+        } else {
+
+            // Si no seleccionó nada, muestra un mensaje de alerta
+            alert('Por favor, selecciona una nota para cada casilla.');
+        }
+    });
+</script>
 </body>
 </html>
