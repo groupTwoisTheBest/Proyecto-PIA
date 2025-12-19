@@ -1,26 +1,27 @@
-// Escucha el evento "submit" del formulario con id "Selectormaestro" when:
+// Escucha el evento "submit" del formulario con id "Selectormaestro"
 document.getElementById('Selectormaestro').addEventListener('submit', function(event) {
 
-    // Evita que el formulario recargue la página automáticamente. haces tus momos
+    // Evita que el formulario recargue la página automáticamente
     event.preventDefault();
 
-    // Obtiene el valor seleccionado del mismo elemento "Selectormaestro". en el trabajo grupal
+    // Obtiene el valor seleccionado del elemento con id "Selectormaestro"
     const maestro = document.getElementById('Selectormaestro').value;
 
-    // Si hay un maestro seleccionado... y en el comentario del codigo
+    // Si hay un maestro seleccionado...
     if (maestro) {
 
-         // Guarda el maestro en localStorage. para que tus compañeros lo vean
+        // Guarda el maestro en localStorage
         localStorage.setItem('maestroSeleccionado', maestro);
 
-         // Redirige a la página 2. el futuro es hoy, oiste viejo? Xddd
+        // Redirige a la página 2
         window.location.href = 'pagina2.html';
     } else {
 
-         // Si no seleccionó nada, muestra un mensaje de alerta. Por qué sigues leyendo esta mmda?
+        // Si no seleccionó nada, muestra un mensaje de alerta
         alert('Por favor, selecciona un maestro');
     }
 });
+
 
 // Función que guarda las respuestas del cuestionario y continúa a la siguiente página
 function guardarYContinuar() {
